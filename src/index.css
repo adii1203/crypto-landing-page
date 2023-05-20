@@ -3,8 +3,8 @@
 :root{
   /* CSS HSL */
 --black: hsla(0, 0%, 0%, 1);
---ghost-white: hsla(252, 45%, 98%, 1);
---french-gray: hsla(264, 3%, 71%, 1);
+--ghost-white: hsla(252, 45%, 92%, 1);
+--french-gray: hsla(264, 3%, 44%, 1);
 --white: hsla(0, 0%, 100%, 1);
 --fairy-tale: hsla(326, 93%, 89%, 1);
 --jasmine: hsla(50, 100%, 78%, 1);
@@ -15,5 +15,11 @@
 --f-w-600: 600;
 --f-w-700: 700;
 
---font-famile: 'IBM Plex Mono', monospace;
+--ff-IBM-Plex-Mono: 'IBM Plex Mono', monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

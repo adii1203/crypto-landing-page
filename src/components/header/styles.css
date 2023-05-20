@@ -1,0 +1,99 @@
+
+header{
+    background-color: var(--ghost-white);
+    font-family: var(--ff-IBM-Plex-Mono);
+}
+
+._wrapper{
+    --padding:1.5rem;
+
+    width: min(80rem, 100%);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: calc(var(--padding) + 1.5rem);
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: var(--padding);
+
+    display: none;
+}
+
+.links a{
+    color: var(--black);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 260ms ease-in-out;
+    position: relative;
+}
+.links a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--black);
+    left: 0;
+    bottom: -2px;
+
+    transition: width 240ms ease-in-out;
+}
+
+.links a:hover{
+    color: var(--french-gray);
+}
+.links a:hover::after{
+    width: 100%;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: var(--ff-IBM-Plex-Mono);
+}
+
+.login_btn{
+    margin-right: calc(var(--padding) + 1.5rem);
+    padding: .8rem 1.8rem;
+    transition: all 150ms ease-in;
+    outline: 1.6px solid var(--black);
+}
+.login_btn:hover{
+    background-color: var(--white);
+    outline: 1.6px solid var(--black);
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+}
+
+.signup_btn{
+    padding: .8rem 1.8rem;
+    outline: 1.6px solid var(--black);
+    background-color: var(--white);
+
+    transition: all 150ms ease-in;
+}
+.signup_btn:hover{
+    background-color: transparent;
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+}
+
+@media (min-width: 780px){
+    .nav-list{
+        display: flex;
+    }
+}
